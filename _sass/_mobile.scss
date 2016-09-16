@@ -1,0 +1,167 @@
+$mobile-bar-height: 56px; // as per Material Design keylines, because why 
+$nav-height: 48px; // as per Material Design keylines
+
+$menubutton-width: 21px;
+$menubutton-thickness: 3px;
+$menubutton-margin: ($menubutton-width - $menubutton-thickness) / 2;
+$menubutton-bg: $ted-color;
+
+@media only screen and (max-width: 775px) {
+
+    .hideOnMobile {
+        display: none !important;
+    }
+
+    .showOnMobile {
+        display: initial !important;
+    }
+
+    header {
+        height: $mobile-bar-height + $nav-height;
+        overflow: hidden;
+        transition: height 0.2s;
+
+        #logo {
+            left: 52px;
+        }
+
+        .js & {
+            height: $mobile-bar-height;
+
+            &.open {
+                height: $mobile-bar-height + $nav-height;
+            }
+        }
+
+        img {
+            margin: $mobile-bar-height * 0.16 0;
+            height: $mobile-bar-height * 0.68;
+        }
+
+        nav {
+            position: absolute;
+            left: 0;
+            top: $mobile-bar-height;
+            width: 100vw;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            a {
+                line-height: $nav-height;
+                height: $nav-height;
+            }
+
+        }
+
+        .menus {
+            padding: 0 16px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+    }
+
+		.overflowButton {
+        float: left;
+        color: transparent;
+				background: $menubutton-bg;
+				position: absolute;
+				cursor: pointer;
+				transition: background .2s;
+        top: 26px;
+        left: 16px;
+
+        &:active {
+            opacity: 0.7;
+        }
+				
+				&, &::before, &::after {
+						content: "";
+						display: block !important;
+						width: $menubutton-width;
+						height: $menubutton-thickness;
+				}
+				
+				&::before, &::after {
+						position: absolute;
+						left: 0;
+						background: $menubutton-bg;
+						right: 0;
+						transition: transform .3s, -webkit-transform .3s;
+						transform-origin: left;
+            -webkit-transform-origin: left;
+				}
+				
+				&::before {
+						top: -$menubutton-margin;
+				}
+				
+				&::after {
+						bottom: -$menubutton-margin;
+				}
+				
+				.open & {
+						background: transparent;
+						
+						&::before {
+								transform: rotate(46deg) scaleX(1.22);
+                -webkit-transform: rotate(45deg) scaleX(1.22);
+						}
+						
+						&::after {
+								transform: rotate(-45deg) scaleX(1.22);
+                -webkit-transform: rotate(-45deg) scaleX(1.22);
+						}
+				}
+		}
+
+    .hero {
+        height: 400px;
+        
+        img {
+            top: calc(50% + #{$mobile-bar-height});
+        }
+
+        &::before {
+            height: 56px;
+        }
+
+        &::after {
+            height: 150px;
+        }
+    }
+
+    main, footer {
+        &, & p {
+            font-size: 1em;
+        }
+    }
+
+    main {
+        margin-top: $mobile-bar-height;
+        min-width: 0;
+        width: calc(100% - 36px);
+       
+        h1 {
+            padding-top: 100px;
+            margin-bottom: 150px;
+        }
+
+    }
+
+    footer {
+        height: 575px;
+    }
+
+    footer > .content {
+        .info, .meta, .social {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+
+}
+

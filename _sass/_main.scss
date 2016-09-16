@@ -1,0 +1,443 @@
+/* SCSS vars */
+$ted-color: #e62b1e;
+$top-bar-height: 80px;
+
+$font-family: "Lato", "Helvetica", "Arial", sans-serif;
+
+$brand-color-dark: #cc66ff;
+$brand-color-light: #fff101;
+
+a {
+    cursor: pointer !important;
+}
+
+/* resets */
+body,
+input,
+textarea {
+    font-family: $font-family;
+}
+
+html,
+body,
+div,
+iframe,
+img,
+header,
+main,
+footer,
+nav,
+input {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.showOnMobile {
+    display: none;
+}
+
+header {
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 3;
+    padding: 0 10%;
+    height: $top-bar-height;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    
+    #logo {
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+
+    .overflowButton {
+        display: none;
+    }
+
+    img {
+        height: 68%;
+        margin: $top-bar-height * 0.16 0;
+    }
+
+    nav {
+
+        height: $top-bar-height;
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 0;
+        
+        a {
+            display: block;
+            text-decoration: none;
+            color: #555;
+            float: left;
+
+            margin: 0 8px;
+            box-sizing: border-box;
+            line-height: $top-bar-height;
+            height: $top-bar-height;
+            transition: color .3s;
+
+            font-size: 0.9em;
+            position: relative;
+            overflow: visible;
+
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 60px;
+
+                content: "";
+                display: block;
+                background: linear-gradient(to right, $brand-color-dark, $ted-color);
+                height: 3px;
+                width: 35px;
+
+                transform: scaleX(0);
+                -webkit-transform: scaleX(0);
+                transition: transform .3s, -webkit-transform .3s;
+                transform-origin: right;
+                -webkit-transform-origin: right;
+            }
+
+            &:hover, &.active {
+                color: $ted-color;
+
+                &::after {
+                    transform: scaleX(1);
+                    -webkit-transform: scaleX(1);
+                }
+
+            }
+
+            &.active::after {
+                transition: none;
+            }
+
+            &:active {
+                opacity: .7;
+            }
+
+        }
+    }
+}
+
+.hero {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+    transition: opacity 1.5s;
+    background: black;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &.fasthide {
+        transition: opacity .25s;
+        opacity: 0 !important;
+    }
+
+    img {
+        opacity: .9;
+        position: absolute;
+        top: calc(50% + #{$top-bar-height});
+        left: 0;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    &::before, &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    &::before {
+        z-index: 2;
+        top: 0;
+        background: linear-gradient(to top, transparent, white);
+        height: $top-bar-height;
+    }
+
+    &::after {
+        bottom: 0;
+        background: linear-gradient(to bottom, transparent, white);
+        height: 400px;
+    }
+
+}
+
+main {
+    
+    margin: $top-bar-height auto 0 auto;
+    min-height: calc(100vh - #{$top-bar-height +450px});
+    width: 65%;
+    min-width: 300px;
+    max-width: 800px;
+    
+    a {
+        color: $ted-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        padding-top: 170px;
+        margin-bottom: 240px;
+        font-size: 6vh;
+        position: relative;
+    
+        &::after {
+            position: absolute;
+            top: calc(100% + 28px);
+            left: 0;
+            right: 0;
+
+            content: "";
+            display: block;
+            background: linear-gradient(to right, $brand-color-dark, $ted-color);
+            height: 6px;
+            width: 24%;
+            margin: 0 38%;
+        }
+
+    }
+
+    h2 {
+        color: #777;
+        font-size: 1.8em;
+        text-align: center;
+        margin: 42px 0 24px 0;
+    }
+
+    p {
+        line-height: 1.5em;
+        font-size: 1.3em;
+        margin-bottom: 24px;
+    }
+
+    q {
+        font-style: italic;
+        text-align: center;
+        font-size: 2em;
+        font-family: "Playfair Display", serif;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 70px 0;
+
+        &::before {
+            content: '“';
+            left: -18px;
+            top: -100px;
+        }
+
+        &::after {
+            content: '”';
+            right: -18px;
+            bottom: -174px;
+        }
+
+        &::before, &::after {
+            opacity: .3;
+            color: $ted-color;
+            font-style: normal;
+            font-size: 6em;
+            position: absolute;
+        }
+    }
+
+    iframe.googleForm {
+        width: 100%;
+    }
+
+}
+
+.gallery {
+    
+    overflow: hidden;
+
+    .gallery-item {
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        margin: 8px;
+        width: calc(100% / 3 - 16px);
+        padding: 12px;
+	float: left;
+	height: 430px;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 350px;
+    overflow: visible;
+    position: relative;
+    margin-top: 100px;
+    font-size: 1.3em;
+    background: linear-gradient(to bottom, transparent, rgba($brand-color-dark, .3) 65%, rgba($ted-color, .3));
+
+    .content {
+        width: 65%;
+        max-width: 800px;
+        min-width: 300px;
+        margin: 0 auto;
+    } 
+
+    &::before {
+        position: absolute;
+        top: -53px;
+        left: 0;
+        right: 0;
+
+        content: "";
+        display: block;
+        background: linear-gradient(to right, $brand-color-dark, $ted-color);
+        height: 6px;
+        width: 24%;
+        margin: 0 38%;
+    }
+
+
+    .info, .meta {
+      
+        float: left;
+
+        a.page-links {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        a {
+            color: $ted-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .info {
+        width: 35%;
+    }
+
+    .meta {
+        width: 65%;
+    }
+
+    .social {
+
+        width: 35%;
+        float: left;
+
+        a {
+            float: left;
+            margin-right: 12px;
+            border-radius: 50%;
+            display: block;
+            overflow: hidden;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        img {
+
+        }
+    }
+
+}
+
+.js {
+    main, footer, .hero {
+        opacity: 0;
+
+        &.shown {
+            opacity: 1;
+        }
+
+    }
+
+    main, footer {
+        transition: opacity .2s;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .gallery .gallery-item {
+        width: calc(50% - 16px);
+	height: 470px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .gallery .gallery-item {
+        width: calc(100% - 16px);
+	height: 490px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    header {
+        padding: 0 2%;
+
+        nav {
+            right: 3%;
+        }
+    }
+}
+
+@import "_mobile.scss";
+
