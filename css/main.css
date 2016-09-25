@@ -79,7 +79,7 @@ header {
         top: 60px;
         content: "";
         display: block;
-        background: linear-gradient(to right, #cc66ff, #e62b1e);
+        background: linear-gradient(to right, #FAAF10, #e62b1e);
         height: 3px;
         width: 35px;
         transform: scaleX(0);
@@ -169,7 +169,7 @@ main {
       right: 0;
       content: "";
       display: block;
-      background: linear-gradient(to right, #cc66ff, #e62b1e);
+      background: linear-gradient(to right, #FAAF10, #e62b1e);
       height: 6px;
       width: 24%;
       margin: 0 38%; }
@@ -233,7 +233,7 @@ footer {
   position: relative;
   margin-top: 100px;
   font-size: 1.3em;
-  background: linear-gradient(to bottom, transparent, rgba(204, 102, 255, 0.3) 65%, rgba(230, 43, 30, 0.3)); }
+  background: linear-gradient(to bottom, transparent, rgba(250, 175, 16, 0.3) 65%, rgba(230, 43, 30, 0.3)); }
   footer .content {
     width: 65%;
     max-width: 800px;
@@ -246,7 +246,7 @@ footer {
     right: 0;
     content: "";
     display: block;
-    background: linear-gradient(to right, #cc66ff, #e62b1e);
+    background: linear-gradient(to right, #FAAF10, #e62b1e);
     height: 6px;
     width: 24%;
     margin: 0 38%; }
