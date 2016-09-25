@@ -154,6 +154,10 @@ $menubutton-bg: $ted-color;
 
     footer {
         height: 575px;
+    
+        .content {
+            width: calc(100% - 36px);
+        }
     }
 
     footer > .content {

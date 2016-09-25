@@ -393,6 +393,8 @@ footer {
 
   footer {
     height: 575px; }
+    footer .content {
+      width: calc(100% - 36px); }
 
   footer > .content .info, footer > .content .meta, footer > .content .social {
     width: 100%;
