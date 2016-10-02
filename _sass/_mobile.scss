@@ -1,4 +1,4 @@
-$mobile-bar-height: 56px; // as per Material Design keylines, because why 
+$mobile-bar-height: 56px; // as per Material Design keylines, because why
 $nav-height: 48px; // as per Material Design keylines
 
 $menubutton-width: 21px;
@@ -77,14 +77,14 @@ $menubutton-bg: $ted-color;
         &:active {
             opacity: 0.7;
         }
-				
+
 				&, &::before, &::after {
 						content: "";
 						display: block !important;
 						width: $menubutton-width;
 						height: $menubutton-thickness;
 				}
-				
+
 				&::before, &::after {
 						position: absolute;
 						left: 0;
@@ -94,23 +94,23 @@ $menubutton-bg: $ted-color;
 						transform-origin: left;
             -webkit-transform-origin: left;
 				}
-				
+
 				&::before {
 						top: -$menubutton-margin;
 				}
-				
+
 				&::after {
 						bottom: -$menubutton-margin;
 				}
-				
+
 				.open & {
 						background: transparent;
-						
+
 						&::before {
 								transform: rotate(46deg) scaleX(1.22);
                 -webkit-transform: rotate(45deg) scaleX(1.22);
 						}
-						
+
 						&::after {
 								transform: rotate(-45deg) scaleX(1.22);
                 -webkit-transform: rotate(-45deg) scaleX(1.22);
@@ -120,7 +120,7 @@ $menubutton-bg: $ted-color;
 
     .hero {
         height: 400px;
-        
+
         img {
             top: calc(50% + #{$mobile-bar-height});
         }
@@ -144,17 +144,18 @@ $menubutton-bg: $ted-color;
         margin-top: $mobile-bar-height;
         min-width: 0;
         width: calc(100% - 36px);
-       
+
         h1 {
             padding-top: 100px;
             margin-bottom: 150px;
+            font-size: 44px;
         }
 
     }
 
     footer {
         height: 575px;
-    
+
         .content {
             width: calc(100% - 36px);
         }
@@ -168,4 +169,3 @@ $menubutton-bg: $ted-color;
     }
 
 }
-
