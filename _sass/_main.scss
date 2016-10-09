@@ -9,7 +9,7 @@ header {
     z-index: 3;
     padding: 0 10%;
     height: $top-bar-height;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 
     #logo {
         display: block;
@@ -193,14 +193,14 @@ main {
     }
 
     h2 {
-        color: #777;
+        color: #555;
         font-size: 1.8em;
         text-align: center;
         margin: 42px 0 24px 0;
     }
 
     p.sub {
-        color: #999;
+        color: #777;
         text-align: center;
         font-style: italic;
     }
@@ -256,17 +256,19 @@ main {
 
 .gallery {
 
-    overflow: hidden;
+    // TODO fix this with masonry stuff
+
+    columns: 3 210px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
 
     .gallery-item {
-        background: #fff;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         border-radius: 4px;
-        margin: 8px;
-        width: calc(100% / 3 - 16px);
+        margin-bottom: 16px;
         padding: 12px;
-	float: left;
-	height: 430px;
+      	float: left;
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -375,20 +377,6 @@ footer {
         transition: opacity .2s;
     }
 
-}
-
-@media only screen and (max-width: 1000px) {
-    .gallery .gallery-item {
-        width: calc(50% - 16px);
-	height: 470px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .gallery .gallery-item {
-        width: calc(100% - 16px);
-	height: 490px;
-    }
 }
 
 @media only screen and (max-width: 930px) {
