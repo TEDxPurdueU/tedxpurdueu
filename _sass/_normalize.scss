@@ -1,0 +1,47 @@
+/* SCSS vars */
+$ted-color: #e62b1e;
+$top-bar-height: 80px;
+
+$font-family: "Lato", "Helvetica", "Arial", sans-serif;
+
+$brand-color-dark: #cc66ff;
+$brand-color-light: #fff101;
+
+a {
+    cursor: pointer !important;
+}
+
+/* normalize */
+body,
+input,
+textarea {
+    font-family: $font-family;
+}
+
+html,
+body,
+div,
+iframe,
+img,
+header,
+main,
+footer,
+nav,
+input {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #eee;
+}
+
+.showOnMobile {
+    display: none;
+}
