@@ -1,0 +1,35 @@
+.seasonSelector {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    max-width: 900px;
+    min-width: 300px;
+
+    a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        transition: background .3s;
+        padding: 4px 8px;
+        border-radius: 4px;
+
+        &.active, &::hover [
+            background: #fff;
+            color: #777;
+        ]
+
+        &.fastHide {
+            transition: none;
+        }
+    }
+}
+
+@media (max-width: 775px) {
+    margin: 0 20px;
+
+    a {
+        font-size: 1em;
+    }
+}
