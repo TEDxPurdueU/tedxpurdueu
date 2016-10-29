@@ -15,10 +15,10 @@
         padding: 4px 8px;
         border-radius: 4px;
 
-        &.active, &::hover [
+        &.active, &::hover {
             background: #fff;
             color: #777;
-        ]
+        }
 
         &.fastHide {
             transition: none;
