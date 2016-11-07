@@ -3,6 +3,6 @@ const seasonLinks = Array.prototype.slice.apply(document.querySelectorAll('.seas
 if (seasonLinks.length != 0) {
     const path = window.location.pathname;
     seasonLinks.forEach(el => {
-        if (el.href == path) el.classList.add('active');
+        if (el.href.indexOf(path) > -1) el.classList.add('active');
     });
 }
