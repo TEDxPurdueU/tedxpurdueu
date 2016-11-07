@@ -9,6 +9,9 @@
       	float: left;
         overflow: hidden;
         width: 100%;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
 
         img {
             width: 100%;
@@ -35,10 +38,6 @@
         columns: 1;
 
         .gallery-item {
-            -webkit-column-break-inside: avoid;
-            page-break-inside: avoid;
-            break-inside: avoid;
-
             img {
                 width: 36%;
                 float: left;
