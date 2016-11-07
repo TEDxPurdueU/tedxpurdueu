@@ -6,6 +6,9 @@
     width: 65%;
     max-width: 900px;
     min-width: 300px;
+    margin-top: calc(200px + 6vh);
+    position: absolute;
+    flex-direction: row-reverse;
 
     a {
         color: #fff;
@@ -15,7 +18,8 @@
         padding: 4px 8px;
         border-radius: 4px;
 
-        &.active, &::hover {
+        &.active,
+        &:hover {
             background: #fff;
             color: #777;
         }

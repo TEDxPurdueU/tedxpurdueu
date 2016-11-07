@@ -11,14 +11,17 @@ var paths = {
       'js/libs/jquery.js'
     ],
     scripts: [
-        'js/main.js'
+        'js/main.js',
+        'js/seasonSelector.js'
     ],
     styles: [
         'css/main.scss'
     ]
 };
 
-gulp.task('default', ['compile-styles', 'compile-scripts', 'compile-libs']);
+gulp.task('default', () => console.log("Tasks: compile-styles, compile-scripts, compile-libs, build"));
+
+gulp.task('build', ['compile-styles', 'compile-scripts', 'compile-libs']);
 
 gulp.task('compile-styles', function() {
     return gulp.src(paths.styles)
@@ -49,8 +52,4 @@ gulp.task('compile-libs', function() {
             .pipe(concat('js/libs.min.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./'));
-});
-
-gulp.task('build', function() {
-    // do build stuff
 });
