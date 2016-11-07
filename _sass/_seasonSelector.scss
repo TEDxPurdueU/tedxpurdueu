@@ -4,9 +4,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    left: 0;
+    font-weight: bold;
     max-width: 600px;
     min-width: 300px;
-    margin-top: calc(250px + 6vh);
+    margin: calc(250px + 6vh) auto;
     position: absolute;
     flex-direction: row-reverse;
 
@@ -21,7 +23,7 @@
         &.active,
         &:hover {
             background: #fff;
-            color: #777;
+            color: #999;
             text-decoration: none;
         }
 
