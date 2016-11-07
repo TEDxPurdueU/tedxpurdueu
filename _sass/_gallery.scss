@@ -28,9 +28,6 @@
 
     .gallery {
         columns: 3 210px;
-        -webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-        break-inside: avoid;
     }
 
     .gallery.long {
@@ -38,6 +35,10 @@
         columns: 1;
 
         .gallery-item {
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+
             img {
                 width: 36%;
                 float: left;
