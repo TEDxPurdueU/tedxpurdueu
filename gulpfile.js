@@ -12,7 +12,8 @@ var paths = {
     ],
     scripts: [
         'js/main.js',
-        'js/seasonSelector.js'
+        'js/seasonSelector.js',
+        'js/sectionMarker.js'
     ],
     styles: [
         'css/main.scss'
