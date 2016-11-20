@@ -11,9 +11,10 @@ var paths = {
       'js/libs/jquery.js'
     ],
     scripts: [
-        'js/main.js',
         'js/seasonSelector.js',
-        'js/sectionMarker.js'
+        'js/sectionMarker.js',
+        'js/purdueLocator.js',
+        'js/main.js'
     ],
     styles: [
         'css/main.scss'

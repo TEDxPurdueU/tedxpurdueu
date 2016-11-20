@@ -44,11 +44,12 @@ $("#menubar a").click(function(evt) {
 $("a[data-href='" + location.href + "']").addClass("active");
 
 // shuffling images
+let id = 0;
 $(".hero img").load(function() {
     $(".hero").addClass("shown");
+    if (purdueLocator && purdueLocator instanceof Function) purdueLocator(id);
 });
-
-var id = Math.floor(Math.random() * 11).toString();
+id = Math.floor(Math.random() * 11).toString();
 $(".hero img")[0].src = "/assets/" + id + ".jpg";
 
 
