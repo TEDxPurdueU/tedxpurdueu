@@ -132,6 +132,10 @@ $menubutton-bg: $ted-color;
         &::after {
             height: 150px;
         }
+
+        .mapLocation {
+            top: calc(100% - 100px);
+        }
     }
 
     main, footer {

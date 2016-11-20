@@ -148,9 +148,10 @@ header {
     }
 
     .mapLocation {
+        display: none;
         position: absolute;
         right: 20px;
-        top: 100px;
+        top: $top-bar-height + 20px;
         overflow: hidden;
         cursor: pointer;
 
@@ -166,7 +167,15 @@ header {
             &:hover,
             &:focus {
                 background: white;
-                color: #aaa;
+                color: #666;
+
+                &::after {
+                    content: ' at Purdue?';
+                }
+            }
+
+            &::after {
+                content: '?';
             }
         }
     }
@@ -369,6 +378,10 @@ footer {
 
     main, footer {
         transition: opacity .2s;
+    }
+
+    .mapLocation {
+        display: block;
     }
 
 }
