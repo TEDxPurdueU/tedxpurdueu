@@ -139,9 +139,14 @@ $menubutton-bg: $ted-color;
         top: 312px;
 
         a::after {
-            content: '?';
+            content: '\'s this?';
         }
     }
+
+    .seasonSelector + .mapLocation a::after {
+        content: '?';
+    }
+
 
     main, footer {
         &, & p {

@@ -2,7 +2,7 @@
 
 const locationURLs = [
     ['https://www.google.com/maps/place/Engineering+Fountain/@40.4284942,-86.9148402,17.51z/data=!4m5!3m4!1s0x0:0x14933af4b9b35f41!8m2!3d40.428627!4d-86.9137886!6m1!1e1'], // Engineering Fountain
-    ['https://www.google.com/maps/@40.4353168,-86.9174828,3a,75y,161h,90t/data=!3m7!1e1!3m5!1sxmZt8c3VZSYa8Q6r7u54Bg!2e0!6s%2F%2Fgeo1.ggpht.com%2Fcbk%3Fpanoid%3DxmZt8c3VZSYa8Q6r7u54Bg%26output%3Dthumbnail%26cb_client%3Dsearch.TACTILE.gps%26thumb%3D2%26w%3D392%26h%3D106%26yaw%3D161.3628%26pitch%3D0%26thumbfov%3D100!7i3328!8i1664'], // Anvil Statue
+    ['https://www.google.com/maps/@40.4345263,-86.9171598,3a,75y,36.2h,95.47t/data=!3m6!1e1!3m4!1s0BdfCDEApvUzMoZgbVUCtw!2e0!7i3328!8i1664'], // Anvil Statue
     ['https://www.google.com/maps/@40.4313033,-86.9165845,3a,75y,153.44h,87.79t/data=!3m7!1e1!3m5!1slMViGcUdIc8Cdz1Y0oqXjA!2e0!6s%2F%2Fgeo1.ggpht.com%2Fcbk%3Fpanoid%3DlMViGcUdIc8Cdz1Y0oqXjA%26output%3Dthumbnail%26cb_client%3Dsearch.TACTILE.gps%26thumb%3D2%26w%3D392%26h%3D106%26yaw%3D207.43321%26pitch%3D0%26thumbfov%3D100!7i3328!8i1664'], // Purdue Arch
     ['https://www.google.com/maps/@40.4313352,-86.9157395,3a,75y,197.95h,80.73t/data=!3m6!1e1!3m4!1syvw5Zj1sKDK7_WvIVnW6aA!2e0!7i3328!8i1664'], // Neil Armstrong Statue
     ['https://www.google.com/maps/place/John+Purdue+Memorial+Fountain/@40.4252898,-86.9148989,3a,75y,96.24h,78.7t/data=!3m7!1e1!3m5!1sfx37_9MnNk-LkVGtVE7Plw!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3Dfx37_9MnNk-LkVGtVE7Plw%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D94.643005%26pitch%3D0%26thumbfov%3D100!7i3328!8i1664!4m5!3m4!1s0x0:0xa4f37018d5056532!8m2!3d40.4252713!4d-86.9146892!6m1!1e1'], // Memorial Fountain
