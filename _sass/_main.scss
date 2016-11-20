@@ -147,39 +147,39 @@ header {
         height: 400px;
     }
 
-    .mapLocation {
-        display: none;
-        position: absolute;
-        right: 20px;
-        top: $top-bar-height + 20px;
-        overflow: hidden;
-        cursor: pointer;
+}
 
-        a {
-            display: block;
-            color: white;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            padding: 6px 10px;
-            text-decoration: none;
-            transition: color .3s, background .3s;
+.mapLocation {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: $top-bar-height + 20px;
+    overflow: hidden;
+    cursor: pointer;
 
-            &:hover,
-            &:focus {
-                background: white;
-                color: #666;
+    a {
+        display: block;
+        color: white;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 4px;
+        padding: 6px 10px;
+        text-decoration: none;
+        transition: color .3s, background .3s;
 
-                &::after {
-                    content: ' at Purdue?';
-                }
-            }
+        &:hover,
+        &:focus {
+            background: white;
+            color: #666;
 
             &::after {
-                content: '?';
+                content: ' at Purdue?';
             }
         }
-    }
 
+        &::after {
+            content: '?';
+        }
+    }
 }
 
 main {
