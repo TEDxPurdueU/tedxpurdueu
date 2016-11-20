@@ -170,12 +170,12 @@ header {
         &:focus {
             background: rgba(255, 255, 255, 0.4);
             &::after {
-                content: ' at Purdue?';
+                content: '\'s this at Purdue?';
             }
         }
 
         &::after {
-            content: '?';
+            content: '\'s this?';
         }
     }
 }

@@ -136,7 +136,11 @@ $menubutton-bg: $ted-color;
     }
 
     .mapLocation {
-        top: 300px;
+        top: 312px;
+
+        a::after {
+            content: '?';
+        }
     }
 
     main, footer {
