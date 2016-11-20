@@ -160,17 +160,15 @@ header {
     a {
         display: block;
         color: white;
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         padding: 6px 10px;
         text-decoration: none;
-        transition: color .3s, background .3s;
+        transition: background .2ss;
 
         &:hover,
         &:focus {
-            background: white;
-            color: #666;
-
+            background: rgba(255, 255, 255, 0.4);
             &::after {
                 content: ' at Purdue?';
             }
