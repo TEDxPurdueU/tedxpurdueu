@@ -7,5 +7,5 @@ if (seasonLinks.length != 0) {
     });
 
     // for styling other things around it
-    $('main').addClass('withSeasons');
+    $('body').addClass('withSeasons');
 }
