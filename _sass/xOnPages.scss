@@ -1,0 +1,22 @@
+.page-decorations {
+    position: absolute;
+    width: 100;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .left,
+    .right {
+        position: absolute;
+        margin-top: 70vw; // to leave reasonable spaces between x's
+        width: 20vw;
+    }
+
+    .left {
+        left: -4vw;
+    }
+
+    .right {
+        right: -4vw;
+    }
+}

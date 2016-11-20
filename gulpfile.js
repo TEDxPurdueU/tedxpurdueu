@@ -14,6 +14,7 @@ var paths = {
         'js/seasonSelector.js',
         'js/sectionMarker.js',
         'js/purdueLocator.js',
+        'js/xOnPages.js',
         'js/main.js'
     ],
     styles: [
