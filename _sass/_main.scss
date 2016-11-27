@@ -240,21 +240,25 @@ main {
       width: 100%;
       box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
       border-radius: 4px;
+    }
 
-      &.partner-img {
-          height: auto;
-          width: 90%;
-          margin: 0 auto 24px auto;
-          padding: 20px;
-          position: relative;
-          background: #fff;
+    .partner-img {
+        width: 90%;
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
 
-          & + p {
-              margin-top: -24px;
-              margin-bottom: 24px;
-              text-align: center;
-          }
-      }
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: center;
+            line-height: 2em;
+        }
     }
 
     p {
