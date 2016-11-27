@@ -1,5 +1,4 @@
 User-agent: *
 
-Disallow: /t
-Disallow: /p
-
+Disallow: /t$
+Disallow: /p$
