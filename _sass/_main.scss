@@ -246,19 +246,20 @@ main {
         width: 90%;
         padding: 20px;
         background: #fff;
-        margin-bottom: 24px;
         border-radius: 4px;
+        margin: 0 auto 24px auto;
         box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
 
         img {
             width: 100%;
             height: auto;
             box-shadow: none;
+            margin-bottom: 18px;
         }
 
         p {
             text-align: center;
-            line-height: 2em;
+            margin: 0;
         }
     }
 
