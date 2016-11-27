@@ -238,8 +238,31 @@ main {
 
     img {
       width: 100%;
-      box-shadow: 0 15px 25px -4px rgba(0,0,0,0.4);
+      box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
       border-radius: 4px;
+
+      &.partner-img {
+          height: auto;
+          width: auto;
+          max-width: 100%;
+          padding: 20px;
+          position: relative;
+
+          &::after {
+              display: block;
+              content: attr('alt');
+              font-family: $font-family;
+              text-align: center;
+              line-height: 1.5em;
+              font-size: 1.3em;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 100%;
+              width: 100%;
+              margin-top: 14px;
+          }
+      }
     }
 
     p {
