@@ -248,6 +248,12 @@ main {
           padding: 20px;
           position: relative;
           background: #fff;
+
+          & + p {
+              margin-top: -24px;
+              margin-bottom: 24px;
+              text-align: center;
+          }
       }
     }
 
