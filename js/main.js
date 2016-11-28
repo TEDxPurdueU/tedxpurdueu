@@ -49,6 +49,9 @@ $(".hero img").load(function() {
     $(".hero").addClass("shown");
     if (purdueLocator && purdueLocator instanceof Function) purdueLocator(id);
 });
+setTimeout(function() {
+    $(".hero").addClass("shown");
+}, 4500);
 id = Math.floor(Math.random() * 11).toString();
 $(".hero img")[0].src = "/assets/" + id + ".jpg";
 

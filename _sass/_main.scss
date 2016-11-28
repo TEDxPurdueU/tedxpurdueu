@@ -238,8 +238,37 @@ main {
 
     img {
       width: 100%;
-      box-shadow: 0 15px 25px -4px rgba(0,0,0,0.4);
+      box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
       border-radius: 4px;
+    }
+
+    .partner-img {
+        width: 85%;
+        padding: 20px;
+        background: #fff;
+        border-radius: 4px;
+        margin: 0 auto 24px auto;
+        box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
+
+        &.activist {
+            width: 90%;
+        }
+
+        &.visionary {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            box-shadow: none;
+            margin-bottom: 18px;
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+        }
     }
 
     p {
