@@ -10,7 +10,7 @@
     const $container = $('.page-decoration');
     let liveXCount = 0;
 
-    const randomPositions = new Array(X_COUNT).map(() => {
+    new Array(X_COUNT).fill(0).map(() => {
         liveXCount ++;
 
         return {
