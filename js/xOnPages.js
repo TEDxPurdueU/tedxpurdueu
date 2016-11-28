@@ -1,18 +1,21 @@
 // depending on the page's length
 // randomly rotate and place x's in either '.right' or '.left' and '.dropping-x' configuration inside 'body > .page-decoration'
 
-(function(){
+// (function(){
 
     const BODY_HEIGHT = document.body.getBoundingClientRect().height;
     const WINDOW_HEIGHT = window.innerHeight;
     const X_COUNT = Math.floor(BODY_HEIGHT / WINDOW_HEIGHT) - 1;
 
     const $container = $('.page-decoration');
+    let liveXCount = 0;
 
-    const randomPositions = new Array(X_COUNT).map(each => {
+    const randomPositions = new Array(X_COUNT).map(() => {
+        liveXCount ++;
+
         return {
             angle: `${Math.floor(Math.random() * 180) - 90}deg`,
-            top: `${Math.floor(Math.random() * WINDOW_HEIGHT) + WINDOW_HEIGHT * i}px`,
+            top: `${Math.floor(Math.random() * WINDOW_HEIGHT) + WINDOW_HEIGHT * liveXCount}px`,
             class: Math.random() < .5 ? '.left' : '.right'
         };
     }).forEach(positionData => {
@@ -25,4 +28,4 @@
         $container.append(xString);
     });
 
-})();
+// })();
