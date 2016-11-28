@@ -1,4 +1,4 @@
-.page-decorations {
+.page-decoration {
     position: absolute;
     width: 100;
     top: 0;
@@ -8,7 +8,6 @@
     .left,
     .right {
         position: absolute;
-        margin-top: 70vw; // to leave reasonable spaces between x's
         width: 20vw;
         background: url('/assets/x.png');
         background-size: 100%;
