@@ -19,9 +19,11 @@ Our stack is pretty vanilla, using __jQuery__ where it's convenient, unless perf
 We use `gulp` to manage our build process. Just run `gulp build` from the root directory to generate all the necessary assets after changes. This runs:
 - `compile-styles`, which compiles all our styles into a single file
 - `compile-scripts`, which minifies and concatenates all of our custom scripts into a single file,
-- `compile-libs`, which vulcanizes our client-side dependencies
+- `compile-libs`, which minifies and concat's our client-side dependencies
 
 ## Server administration
+
+Our domain, tedxpurdueu.com, is registered with Google Domains with CloudFlare acting as the CDN and DNS.
 
 Both our static web server and our JSON (mobile application backend) server are hosted on a Fedora server on DigitalOcean. For access to the server, please contact the current TEDxPurdueU technology lead.
 
@@ -29,4 +31,7 @@ We have two versions of the site, `dev.tedxpurdueu.com` and `[www.]tedxpurdueu.c
 
 ## Other notes
 
-- Our image files are named very haphazardly. I'm going to point the finger here to nobody in particular, but mostly, this is a consequence of our site migrating from WordPress to a custom solution. Since WordPress dosn't give a hoot about how files are named on upload, this happens. We deal with it. 
+- Our image files are named very haphazardly. We're going to point the finger here to nobody in particular, but mostly, this is a consequence of our site migrating from WordPress to a custom solution. Since WordPress dosn't give a hoot about how files are named on upload, this happens. We deal with it. 
+
+- When you add / change anything on this repository, or on the server infrastructure, please please please leave documentation of it. It helps the sysadmins who change from year to year (season to season) adjust quickly and start out on the right foot.
+
