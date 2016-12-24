@@ -10,10 +10,7 @@
         padding: 12px;
       	float: left;
         overflow: hidden;
-        width: 100%;
-        -webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-        break-inside: avoid-column;
+        width: 33.33333%;
 
         img {
             width: 100%;
@@ -29,10 +26,16 @@
     }
 }
 
+.gallery.two .gallery-item {
+    width: 50%;
+}
+
+.gallery.long .gallery-item {
+    width: 100%;
+}
+
 @media (min-width: 550px) {
     :not(.js) .gallery.long {
-
-        columns: 1;
 
         .gallery-item {
             img {
@@ -54,8 +57,6 @@
     }
 }
 
-:not(.js) {
-    .gallery {
-        columns: 3 210px;
-    }
+:not(.js) .gallery-item {
+    float: left;
 }

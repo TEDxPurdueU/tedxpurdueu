@@ -71,10 +71,9 @@ menubutton.addEventListener("click", function(evt) {
 });
 
 // masonry for gallery
-const msnry = new Masonry(
-    '.gallery:not(.long)',
-    {
-        columnWidth: 210,
+$('.gallery:not(.long)').each((i, el) => {
+    el.masonry({
+        columnWidth: 0,
         itemSelector: '.gallery-item'
-    }
-);
+    });
+});
