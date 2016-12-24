@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 
 var paths = {
     libs: [
-      'js/libs/jquery.js'
+      'js/libs/jquery.js',
+      'js/libs/masonry.min.js'
     ],
     scripts: [
         'js/seasonSelector.js',

@@ -69,3 +69,12 @@ menubutton.addEventListener("click", function(evt) {
         header.classList.remove("open");
     }
 });
+
+// masonry for gallery
+const msnry = new Masonry(
+    '.gallery:not(.long)',
+    {
+        columnWidth: 210,
+        itemSelector: '.gallery-item'
+    }
+);

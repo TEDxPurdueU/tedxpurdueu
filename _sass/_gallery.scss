@@ -30,16 +30,7 @@
 }
 
 @media (min-width: 550px) {
-
-    .gallery {
-        columns: 3 210px;
-    }
-
-    .gallery.two {
-        columns: 2 210px;
-    }
-
-    .gallery.long {
+    :not(.js) .gallery.long {
 
         columns: 1;
 
@@ -60,5 +51,11 @@
                 font-size: 1.2em;
             }
         }
+    }
+}
+
+:not(.js) {
+    .gallery {
+        columns: 3 210px;
     }
 }
