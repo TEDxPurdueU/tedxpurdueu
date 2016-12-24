@@ -243,27 +243,27 @@ main {
     }
 
     .partner-img {
-        width: 85%;
+        width: 39.5%;
         padding: 20px;
         background: #fff;
         border-radius: 4px;
         margin: 0 auto 24px auto;
         box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
+        margin: 1.5%;
+        float: left;
+
+        & + h2 {
+            padding-top: 28px;
+            display: block;
+            clear: both;
+        }
 
         &.activist {
-            width: 90%;
+            width: 42%;
         }
 
         &.visionary {
             width: 47%;
-            margin: 1.5%;
-            float: left;
-
-            & + h2 {
-                padding-top: 28px;
-                display: block;
-                clear: both;
-            }
         }
 
         img {
@@ -427,6 +427,20 @@ footer {
 
         nav {
             right: 3%;
+        }
+    }
+
+    main {
+        .partner-img {
+            width: 85%;
+
+            &.activist {
+                width: 90%;
+            }
+
+            &.visionary {
+                width: 100%;
+            }
         }
     }
 }
