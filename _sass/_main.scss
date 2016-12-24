@@ -188,6 +188,10 @@ main {
     min-width: 300px;
     max-width: 800px;
 
+    &.hideOverflow {
+        overflow: hidden;
+    }
+
     a {
         color: $ted-color;
         text-decoration: none;
@@ -243,13 +247,12 @@ main {
     }
 
     .partner-img {
-        width: 39.5%;
+        width: 40%;
         padding: 20px;
         background: #fff;
         border-radius: 4px;
-        margin: 0 auto 24px auto;
         box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
-        margin: 1.5%;
+        margin: 0 5% 24px 5%;
         float: left;
 
         & + h2 {
@@ -259,10 +262,12 @@ main {
         }
 
         &.activist {
-            width: 42%;
+            margin: 0 3% 24px 3%;
+            width: 44%;
         }
 
         &.visionary {
+            margin: 0 1.5% 24px 1.5%;
             width: 47%;
         }
 
