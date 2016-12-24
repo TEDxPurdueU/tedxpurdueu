@@ -71,9 +71,14 @@ menubutton.addEventListener("click", function(evt) {
 });
 
 // masonry for gallery
-$('.gallery:not(.long)').each((i, el) => {
-    $(el).masonry({
-        columnWidth: 0,
-        itemSelector: '.gallery-item'
+function layoutGallery() {
+    $('.gallery:not(.long)').each((i, el) => {
+        $(el).masonry({
+            columnWidth: 0,
+            itemSelector: '.gallery-item'
+        });
     });
-});
+}
+
+layoutGallery();
+window.addEventListener('load', layoutGallery);
