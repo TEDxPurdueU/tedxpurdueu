@@ -72,7 +72,7 @@ menubutton.addEventListener("click", function(evt) {
 
 // masonry for gallery
 $('.gallery:not(.long)').each((i, el) => {
-    el.masonry({
+    $(el).masonry({
         columnWidth: 0,
         itemSelector: '.gallery-item'
     });
