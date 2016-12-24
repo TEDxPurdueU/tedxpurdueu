@@ -255,7 +255,15 @@ main {
         }
 
         &.visionary {
-            width: 100%;
+            width: 47%;
+            margin: 1.5%;
+            float: left;
+
+            & + h2 {
+                padding-top: 28px;
+                display: block;
+                clear: both;
+            }
         }
 
         img {
