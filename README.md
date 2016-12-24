@@ -35,3 +35,5 @@ We have two versions of the site, `dev.tedxpurdueu.com` and `[www.]tedxpurdueu.c
 
 - When you add / change anything on this repository, or on the server infrastructure, please please please leave documentation of it. It helps the sysadmins who change from year to year (season to season) adjust quickly and start out on the right foot.
 
+- Galleries (denoted by `.gallery` and `.gallery-item` elements) are floated (sorta) in non-JS environments and laid out with the masonry technique when we can use the `masonry.js` JavaScript library. It has a dead simple API and works well for our current setup -- lightweight and single-purpose.
+
