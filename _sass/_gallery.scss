@@ -2,6 +2,7 @@
 
     // TODO fix this with masonry stuff
     overflow: hidden;
+    margin-bottom: 40px;
 
     .gallery-item {
         border-radius: 4px;
@@ -32,6 +33,10 @@
 
     .gallery {
         columns: 3 210px;
+    }
+
+    .gallery.two {
+        columns: 2 210px;
     }
 
     .gallery.long {
