@@ -1,6 +1,6 @@
 # TEDxPurdueU Main Website
 ---
-Static site at (tedxpurdueu.com)[https://tedxpurdueu.com].
+Static site at [tedxpurdueu.com](https://tedxpurdueu.com).
 
 ## Sections
 1. Technologies
