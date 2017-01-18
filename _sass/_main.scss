@@ -123,11 +123,6 @@ header {
         width: 100%;
         min-height: 100%;
         object-fit: cover;
-
-        &.small {
-            width: 76%;
-            margin: 0 auto;
-        }
     }
 
     &::before, &::after {
@@ -249,6 +244,11 @@ main {
       width: 100%;
       box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.4);
       border-radius: 4px;
+
+        &.small {
+            width: 76%;
+            margin: 0 auto;
+        }
     }
 
     .partner-img {
