@@ -27,21 +27,6 @@ header {
         margin: $top-bar-height * 0.16 0;
     }
 
-    .yt-wrapper {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
-
-        iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-        }
-    }
-
     nav {
 
         height: $top-bar-height;
@@ -213,6 +198,21 @@ main {
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+    .yt-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
         }
     }
 
