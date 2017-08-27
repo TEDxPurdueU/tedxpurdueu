@@ -25,9 +25,9 @@ We use `gulp` to manage our build process. Just run `gulp build` from the root d
 
 Our domain, tedxpurdueu.com, is registered with Google Domains with CloudFlare acting as the CDN and DNS.
 
-Both our static web server and our JSON (mobile application backend) server are hosted on a Fedora server on DigitalOcean. For access to the server, please contact the current TEDxPurdueU technology lead.
+Both our static web server and our JSON (mobile application backend) server are hosted on an Ubuntu server on DigitalOcean. For access to the server, please contact the current TEDxPurdueU technology lead.
 
-We have two versions of the site, `dev.tedxpurdueu.com` and `[www.]tedxpurdueu.com`. the `dev` subdomain is used as a beta / staging version. Currently, both versions pull from the same `master` branch, and the production version is migrated over directly from the staging version rather than pulling down from GitHub.
+We have two versions of the site, `staging.tedxpurdueu.com` and `[www.]tedxpurdueu.com`. the `staging` subdomain is used as a beta / staging version. Currently, both versions pull from the same `master` branch, and the production version is migrated over directly from the source version on the server with a simple shell script rather than pulling down from GitHub.
 
 ## Other notes
 
