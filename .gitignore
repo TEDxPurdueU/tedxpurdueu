@@ -1,7 +1,8 @@
 .sass-cache
 *.scssc
 node_modules/
-yarn.lock
+npm-debug.log
+package-lock.json
 .DS_Store
 
 # this is where the deploy-ready static site goes
